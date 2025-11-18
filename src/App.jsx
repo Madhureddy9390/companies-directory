@@ -17,6 +17,7 @@ export default function App() {
   return (
     <div>
       <h2>Company List</h2>
+      <h2>Just Checking</h2>
 
       {companies.map((company) => (
         <div key={company.id}>
