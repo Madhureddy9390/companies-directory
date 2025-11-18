@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "People Tech Group",
+    "name": "Frontlines Media",
     "location": "Hyderabad",
     "employees": 5000
   },
@@ -16,5 +16,47 @@
     "name": "Google India",
     "location": "Bangalore",
     "employees": 25000
+  },
+  {
+    "id": 4,
+    "name": "Infosys",
+    "location": "Mysore",
+    "employees": 40000
+  },
+  {
+    "id": 5,
+    "name": "Wipro",
+    "location": "Hyderabad",
+    "employees": 35000
+  },
+  {
+    "id": 6,
+    "name": "Amazon Development Center",
+    "location": "Hyderabad",
+    "employees": 55000
+  },
+  {
+    "id": 7,
+    "name": "Microsoft India",
+    "location": "Noida",
+    "employees": 30000
+  },
+  {
+    "id": 8,
+    "name": "Accenture",
+    "location": "Bangalore",
+    "employees": 70000
+  },
+  {
+    "id": 9,
+    "name": "HCL Technologies",
+    "location": "Chennai",
+    "employees": 45000
+  },
+  {
+    "id": 10,
+    "name": "Capgemini",
+    "location": "Pune",
+    "employees": 32000
   }
 ]
