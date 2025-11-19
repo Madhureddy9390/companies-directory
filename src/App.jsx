@@ -9,37 +9,35 @@ export default function App() {
   const [columns, setColumns] = useState([]);
 
   useEffect(() => {
+    const fetchCompanies = async () => {
+      try {
+        const res = await axios.get("/companies.json");
+        let cols = [];
+        if (res.data.length > 0) {
+          cols = Object.keys(res.data[0]).map((key) => ({
+            accessorKey: key,
+            header: key.charAt(0).toUpperCase() + key.slice(1),
+          }));
+        }
+        setCompanies(res.data);
+        setColumns(cols);
+
+      } catch (e) {
+        console.log("Error while fetching data from the API", e);
+      }
+    };
     fetchCompanies();
   }, []);
-
-  async function fetchCompanies() {
-    try {
-      const res = await axios.get("/companies.json");
-      console.log(res.data);
-      setCompanies(res.data);
-
-      if (res.data.length > 0) {
-        const cols = Object.keys(res.data[0]).map((key) => ({
-          accessorKey: key,
-          header: key.charAt(0).toUpperCase() + key.slice(1),
-        }));
-        setColumns(cols);
-      }
-    } catch (e) {
-      console.log("Error while fetching data from the API");
-      console.log(e);
-    }
-  }
 
   return (
     <Box
       sx={{
-    width: "100vw",
-    height: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  }}
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
       <Card
         sx={{
