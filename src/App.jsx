@@ -54,6 +54,14 @@ export default function App() {
           // enablePagination ={false} 
           // enableGlobalFilter ={false}
           initialState={{ pagination: { pageSize: 5 } }}
+          muiTableHeadCellProps={{
+            sx: {
+              backgroundColor: "#1976d2",
+              color: "white",
+              fontWeight: "bold",
+              fontSize: "1rem",
+            },
+          }}
         />
       </Card>
     </Box>
