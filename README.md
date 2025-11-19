@@ -27,5 +27,15 @@ Follow these steps to run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone [<your-repository-url>](https://github.com/Madhureddy9390/companies-directory.git)
+git clone https://github.com/Madhureddy9390/companies-directory.git
 cd companies-directory
+
+2. Install dependencies
+npm install
+
+3. Start the development server
+npm run dev
+
+
+The app should now be running at http://localhost:5173
+ (default Vite port).
