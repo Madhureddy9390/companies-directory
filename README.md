@@ -29,13 +29,13 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/Madhureddy9390/companies-directory.git
 cd companies-directory
+```
 
-2. Install dependencies
+### 2. Install dependencies
+```bash
 npm install
-
-3. Start the development server
+```
+### 3.Start the development server
+```bash
 npm run dev
-
-
-The app should now be running at http://localhost:5173
- (default Vite port).
+```
